@@ -1,734 +1,699 @@
 ﻿<!DOCTYPE html>
-
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-eidth, initial-scale=1.0" />
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-    <meta name="viewport" content="width=device-eidth, initial-scale=1.0" />
-
-    <title>Shopping Website</title>
-    <!--stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!---light-slider-css-->
-    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
-    <!--jQuery--------------->
-    <script src="js/JQuery.js"></script>
-    <!--light-slider-js--->
-    <script src="js/lightslider.js"></script>
-    <script src="js/index.js"></script>
-    <!--fav-icon-->
-    <link rel="shortcut icon" href="assets/fav-icon.png" />
-    <!--using-FontAwesome-For-icons--->
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <!--navigation----------------------------->
-    <nav>
-        <!--socal-link-and-phone-number------>
-        <div class="social-call">
-            <!--social-links---->
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+        <title>Shopping Website</title>
+        <!--stylesheet-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!---light-slider-css-->
+        <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+        <!--jQuery--------------->
+        <script src="js/JQuery.js"></script>
+        <!--light-slider-js--->
+        <script src="js/lightslider.js"></script>
+        <script src="js/index.js"></script>
+        <!--fav-icon-->
+        <link rel="shortcut icon" href="assets/fav-icon.png" />
+        <!--using-FontAwesome-For-icons--->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--navigation----------------------------->
+        <nav>
+            <!--socal-link-and-phone-number------>
+            <div class="social-call">
+                <!--social-links---->
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <!--phone-number-->
+                <div class="phone">
+                    <span>Call: +123456789</span>
+                </div>
             </div>
-            <!--phone-number-->
-            <div class="phone">
-                <span>Call: +123456789</span>
-            </div>
-        </div>
-        <!--menu-bar------------------------------>
-        <div class="navigation">
-            <!---logo------>
-            <a href="#" class="logo">
-                <img class="p-image" src="assets/logo.png" />
-            </a>
-            <!--menu-bar----------------------------->
-            <div class="toggle"></div>
-
-
-            <!--menu------>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li>
-                    <a href="men.html">Men</a>
-                    <!--sale-lable-->
-                    <span class="sale-lable">Sale</span>
-                </li>
-
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Shop</a></li>
-            </ul>
-            <!--right-menu--------->
-            <div class="right-menu">
-                <!--search-->
-                <a href="javascript:void(0);" class="search">
-                    <i class="fas fa-search"></i>
+            <!--menu-bar------------------------------>
+            <div class="navigation">
+                <!---logo------>
+                <a href="#" class="logo">
+                    <img class="p-image" src="assets/logo.png" />
                 </a>
-                <!--user-->
-                <a href="javascript:void(0);" class="user">
-                    <i class="far fa-user"></i>
+                <!--menu-bar----------------------------->
+                <div class="toggle"></div>
+
+                <!--menu------>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="men.html">Men</a>
+                        <!--sale-lable-->
+                        <span class="sale-lable">Sale</span>
+                    </li>
+
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+                <!--right-menu--------->
+                <div class="right-menu">
+                    <!--search-->
+                    <a href="javascript:void(0);" class="search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <!--user-->
+                    <a href="javascript:void(0);" class="user">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <!--cart-icon-->
+                    <a href="cart-2.html" target="_blank">
+                        <i class="fas fa-shopping-cart">
+                            <!--number-of-product-in-cart-->
+                            <span class="num-cart-product"></span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!--search-bar---------------------------->
+        <div class="search-bar">
+            <!--search-input------->
+            <div class="search-input">
+                <!--input---->
+                <input type="text" placeholder="Search For Product" />
+                <!--cancel-btn------>
+                <a href="javascript:void(0);" class="search-cancel">
+                    <i class="fas fa-times"></i>
                 </a>
-                <!--cart-icon-->
-                <a href="cart-2.html" target="_blank">
-                    <i class="fas fa-shopping-cart">
-                        <!--number-of-product-in-cart-->
-                        <span class="num-cart-product"></span>
-                    </i>
+            </div>
+        </div>
+
+        <!---login-and-sign-up-form----------------->
+        <div class="form">
+            <!--login------------------------>
+            <div class="login-form">
+                <!--cancel-btn-------->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fas fa-times"></i>
                 </a>
 
+                <!--heading---->
+                <strong>Log In</strong>
+                <!--inputs-->
+                <form>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <!--submit-btn-->
+                    <input type="submit" value="Log In">
+                </form>
+                <!--forget-and-sign-up-btn----->
+                <div class="form-btns">
+                    <a href="#" class="forget">Forget Your Password?</a>
+                    <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+                </div>
             </div>
 
-        </div>
-    </nav>
-    <!--search-bar---------------------------->
-    <div class="search-bar">
-        <!--search-input------->
-        <div class="search-input">
-            <!--input---->
-            <input type="text" placeholder="Search For Product" />
-            <!--cancel-btn------>
-            <a href="javascript:void(0);" class="search-cancel">
-                <i class="fas fa-times"></i>
-            </a>
+            <!--Sign-up------------------------>
+            <div class="sign-up-form">
+                <!--cancel-btn-------->
+                <a href="javascript:void(0);" class="form-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
 
-        </div>
-    </div>
-
-    <!---login-and-sign-up-form----------------->
-    <div class="form">
-        <!--login------------------------>
-        <div class="login-form">
-            <!--cancel-btn-------->
-            <a href="javascript:void(0);" class="form-cancel">
-                <i class="fas fa-times"></i>
-            </a>
-
-            <!--heading---->
-            <strong>Log In</strong>
-            <!--inputs-->
-            <form>
-                <input type="email" placeholder="Example@gmail.com" name="email" required>
-                <input type="password" placeholder="Password" name="password" required>
-                <!--submit-btn-->
-                <input type="submit" value="Log In">
-            </form>
-            <!--forget-and-sign-up-btn----->
-            <div class="form-btns">
-                <a href="#" class="forget">Forget Your Password?</a>
-                <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+                <!--heading---->
+                <strong>Sign Up</strong>
+                <!--inputs-->
+                <form action="connect.php" method="post">
+                    <input type="text" placeholder="Full Name" name="fullname" required>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <!--submit-btn-->
+                    <input type="submit" value="Sign Up">
+                </form>
+                <!--forget-and-sign-up-btn----->
+                <div class="form-btns">
+                    <a href="javascript:void(0);" class="already-account">Already Have an Account ? Sign In</a>
+                </div>
             </div>
         </div>
 
+        <!--Full-Slider---------------------------------------------->
 
-        <!--Sign-up------------------------>
-        <div class="sign-up-form">
-            <!--cancel-btn-------->
-            <a href="javascript:void(0);" class="form-cancel">
-                <i class="fas fa-times"></i>
-            </a>
+        <ul id="adaptive" class="cs-hidden">
+            <!--box-1----------------->
+            <li class="item-a">
+                <!--box------------->
+                <div class="full-slider-box f-slide-1">
+                    <!--slider-text-container-------------->
+                    <div class="slider-text-container">
 
-            <!--heading---->
-            <strong>Sign Up</strong>
-            <!--inputs-->
-            <form action="connect.php" method="post">
-                <input type="text" placeholder="Full Name" name="fullname" required>
-                <input type="email" placeholder="Example@gmail.com" name="email" required>
-                <input type="password" placeholder="Password" name="password" required>
-                <!--submit-btn-->
-                <input type="submit" value="Sign Up">
-            </form>
-            <!--forget-and-sign-up-btn----->
-            <div class="form-btns">
-                <a href="javascript:void(0);" class="already-account">Already Have an Account ? Sign In</a>
+                        <div class="f-slider-text">
+                            <span>Limited offer</span>
+                            <strong>30% off<br /> with <font>promo code</font></strong>
+                            <a href="#" class="f-slider-btn">Shop Now</a>
+                        </div>
 
-            </div>
+                    </div>
+                </div>
+            </li>
+
+            <!--box-2----------------->
+            <li class="item-a">
+                <!--box------------->
+                <div class="full-slider-box f-slide-2">
+                    <!--slider-text-container-------------->
+                    <div class="slider-text-container">
+
+                        <div class="f-slider-text">
+                            <span>Limited offer</span>
+                            <strong>30% off<br /> with <font>promo code</font></strong>
+                            <a href="#" class="f-slider-btn">Shop Now</a>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+
+            <!--box-3----------------->
+            <li class="item-a">
+                <!--box------------->
+                <div class="full-slider-box f-slide-3">
+                    <!--slider-text-container-------------->
+                    <div class="slider-text-container">
+                        <div class="f-slider-text">
+                            <span>Limited offer</span>
+                            <strong>30% off<br /> with <font>promo code</font></strong>
+                            <a href="#" class="f-slider-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <!--Featured-Categories------------------------------->
+        <div class="feature-heading">
+            <h2>Featured Categories</h2>
         </div>
 
+        <ul id="autoWidth" class="cs-hidden">
+            <!--1------------------------------->
+            <li class="item">
+                <!--feature-box-->
+                <div class="feature-box">
+                    <a href="#">
+                        <img class="p-image" src="assets/feature_1.jpg" />
+                    </a>
+                </div>
+                <!--text---------------------->
+                <span>T-Shirt</span>
+            </li>
+            <!--2------------------------------->
+            <li class="item">
+                <!--feature-box-->
+                <div class="feature-box">
+                    <a href="#">
+                        <img class="p-image" src="assets/feature_2.jpg" />
+                    </a>
+                </div>
+                <!--text---------------------->
+                <span>T-Shirt</span>
+            </li>
+            <!--3------------------------------->
+            <li class="item">
+                <!--feature-box-->
+                <div class="feature-box">
+                    <a href="#">
+                        <img class="p-image" src="assets/feature_3.jpg" />
+                    </a>
+                </div>
+                <!--text---------------------->
+                <span>T-Shirt</span>
+            </li>
+            <!--4------------------------------->
+            <li class="item">
+                <!--feature-box-->
+                <div class="feature-box">
+                    <a href="#">
+                        <img class="p-image" src="assets/feature_4.jpg" />
+                    </a>
+                </div>
+                <!--text---------------------->
+                <span>T-Shirt</span>
+            </li>
+            <!--5------------------------------->
+            <li class="item">
+                <!--feature-box-->
+                <div class="feature-box">
+                    <a href="#">
+                        <img class="p-image" src="assets/feature_5.jpg" />
+                    </a>
+                </div>
+                <!--text---------------------->
+                <span>T-Shirt</span>
+            </li>
+            <!--6------------------------------->
+            <li class="item">
+                <!--feature-box-->
+                <div class="feature-box">
+                    <a href="#">
+                        <img class="p-image" src="assets/feature_6.jpg" />
+                    </a>
+                </div>
+                <!--text---------------------->
+                <span>T-Shirt</span>
+            </li>
+        </ul>
+
+        <!--new-arrival-------------------------------->
+        <section class="new-arrival">
+            <!--heading------>
+            <div class="arrival-heading">
+                <strong>New Arrival</strong>
+                <p>We Provide You New Design Fashion Clothes</p>
+            </div>
+
+            <!--product-container-------------->
+            <div class="product-container">
+                <!--product-box-1-->
+                <div class="product-box">
+
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <img class="p-image" src="assets/p-1.png" />
+                    </div>
 
 
-
-    </div>
-
-    <!--Full-Slider---------------------------------------------->
-
-    <ul id="adaptive" class="cs-hidden">
-        <!--box-1----------------->
-        <li class="item-a">
-            <!--box------------->
-            <div class="full-slider-box f-slide-1">
-                <!--slider-text-container-------------->
-                <div class="slider-text-container">
-
-                    <div class="f-slider-text">
-                        <span>Limited offer</span>
-                        <strong>30% off<br /> with <font>promo code</font></strong>
-                        <a href="#" class="f-slider-btn">Shop Now</a>
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
                     </div>
 
                 </div>
-            </div>
-        </li>
+                <!--product-box-2-->
+                <div class="product-box">
 
-        <!--box-2----------------->
-        <li class="item-a">
-            <!--box------------->
-            <div class="full-slider-box f-slide-2">
-                <!--slider-text-container-------------->
-                <div class="slider-text-container">
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
 
-                    <div class="f-slider-text">
-                        <span>Limited offer</span>
-                        <strong>30% off<br /> with <font>promo code</font></strong>
-                        <a href="#" class="f-slider-btn">Shop Now</a>
+                        <img class="p-image" src="assets/p-2.png" />
+                    </div>
+
+
+                    <!--details-->
+                    <div class="product-details">
+                        <span class="p-name">Drawstring T-Shirt 3</span>
+                        <span class="p-price">$23.00</span>
                     </div>
 
                 </div>
-            </div>
-        </li>
+                <!--product-box-3-->
+                <div class="product-box">
 
-        <!--box-3----------------->
-        <li class="item-a">
-            <!--box------------->
-            <div class="full-slider-box f-slide-3">
-                <!--slider-text-container-------------->
-                <div class="slider-text-container">
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
 
-                    <div class="f-slider-text">
-                        <span>Limited offer</span>
-                        <strong>30% off<br /> with <font>promo code</font></strong>
-                        <a href="#" class="f-slider-btn">Shop Now</a>
+                        <img class="p-image" src="assets/p-3.png" />
+                    </div>
+
+
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
                     </div>
 
                 </div>
+                <!--product-box-4-->
+                <div class="product-box">
+
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <img class="p-image" src="assets/p-4.png" />
+                    </div>
+
+
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
+
+                </div>
+                <!--product-box-5-->
+                <div class="product-box">
+
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <img class="p-image" src="assets/p-5.png" />
+                    </div>
+
+
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
+
+                </div>
+                <!--product-box-6-->
+                <div class="product-box">
+
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <img class="p-image" src="assets/p-6.png" />
+                    </div>
+
+
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
+
+                </div>
+                <!--product-box-7-->
+                <div class="product-box">
+
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <img class="p-image" src="assets/p-7.png" />
+                    </div>
+
+
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
+
+                </div>
+                <!--product-box-8-->
+                <div class="product-box">
+
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <img class="p-image" src="assets/p-8.png" />
+                    </div>
+
+
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
+                </div>
             </div>
-        </li>
+        </section>
 
-    </ul>
-
-    <!--Featured-Categories------------------------------->
-    <div class="feature-heading">
-        <h2>Featured Categories</h2>
-    </div>
-
-    <ul id="autoWidth" class="cs-hidden">
-        <!--1------------------------------->
-        <li class="item">
-            <!--feature-box-->
-            <div class="feature-box">
+        <!--sale------------------------------------>
+        <section class="sale">
+            <!--sale-box-1--------------->
+            <div class="sale-box">
+                <!--img---------------->
+                <img class="p-image" src="assets/sale-1.jpg" />
+                <!--text--------------->
                 <a href="#">
-                    <img class="p-image" src="assets/feature_1.jpg" />
+                    <div class="sale-text">
+                        <strong>Bag With Rose Pattern</strong>
+                        <span>Sale off 25%</span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <!--sale-box-2--------------->
+            <div class="sale-box">
+                <!--img---------------->
+                <img class="p-image" src="assets/sale-2.jpg" />
+                <!--text--------------->
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bag With Rose Pattern</strong>
+                        <span>Sale off 25%</span>
+
+                    </div>
+
+                </a>
+
+            </div>
+            <!--sale-box-3--------------->
+            <div class="sale-box">
+                <!--img---------------->
+                <img class="p-image" src="assets/sale-3.jpg" />
+                <!--text--------------->
+                <a href="#">
+                    <div class="sale-text">
+                        <strong>Bag With Rose Pattern</strong>
+                        <span>Sale off 25%</span>
+                    </div>
                 </a>
             </div>
-            <!--text---------------------->
-            <span>T-Shirt</span>
-        </li>
-        <!--2------------------------------->
-        <li class="item">
-            <!--feature-box-->
-            <div class="feature-box">
-                <a href="#">
-                    <img class="p-image" src="assets/feature_2.jpg" />
-                </a>
-            </div>
-            <!--text---------------------->
-            <span>T-Shirt</span>
-        </li>
-        <!--3------------------------------->
-        <li class="item">
-            <!--feature-box-->
-            <div class="feature-box">
-                <a href="#">
-                    <img class="p-image" src="assets/feature_3.jpg" />
-                </a>
-            </div>
-            <!--text---------------------->
-            <span>T-Shirt</span>
-        </li>
-        <!--4------------------------------->
-        <li class="item">
-            <!--feature-box-->
-            <div class="feature-box">
-                <a href="#">
-                    <img class="p-image" src="assets/feature_4.jpg" />
-                </a>
-            </div>
-            <!--text---------------------->
-            <span>T-Shirt</span>
-        </li>
-        <!--5------------------------------->
-        <li class="item">
-            <!--feature-box-->
-            <div class="feature-box">
-                <a href="#">
-                    <img class="p-image" src="assets/feature_5.jpg" />
-                </a>
-            </div>
-            <!--text---------------------->
-            <span>T-Shirt</span>
-        </li>
-        <!--6------------------------------->
-        <li class="item">
-            <!--feature-box-->
-            <div class="feature-box">
-                <a href="#">
-                    <img class="p-image" src="assets/feature_6.jpg" />
-                </a>
-            </div>
-            <!--text---------------------->
-            <span>T-Shirt</span>
-        </li>
+        </section>
 
-
-    </ul>
-
-    <!--new-arrival-------------------------------->
-    <section class="new-arrival">
-        <!--heading------>
-        <div class="arrival-heading">
-            <strong>New Arrival</strong>
-            <p>We Provide You New Design Fashion Clothes</p>
-        </div>
-
-        <!--product-container-------------->
-        <div class="product-container">
-            <!--product-box-1-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-1.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
-            </div>
-            <!--product-box-2-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-2.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <span class="p-name">Drawstring T-Shirt 3</span>
-                    <span class="p-price">$23.00</span>
-                </div>
-
-            </div>
-            <!--product-box-3-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-3.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
-            </div>
-            <!--product-box-4-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-4.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
-            </div>
-            <!--product-box-5-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-5.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
-            </div>
-            <!--product-box-6-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-6.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
-            </div>
-            <!--product-box-7-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-7.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
-            </div>
-            <!--product-box-8-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-8.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
+        <!--new-arrival-------------------------------->
+        <section class="new-arrival">
+            <!--heading------>
+            <div class="arrival-heading">
+                <strong>Feature Items</strong>
+                <p>We Provide You New Design Fashion Clothes</p>
             </div>
 
-        </div>
+            <!--product-container-------------->
+            <div class="product-container">
+                <!--product-box-1-->
+                <div class="product-box">
+
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <img class="p-image" src="assets/p-1.png" />
+                    </div>
 
 
-
-    </section>
-
-
-    <!--sale------------------------------------>
-    <section class="sale">
-        <!--sale-box-1--------------->
-        <div class="sale-box">
-            <!--img---------------->
-            <img class="p-image" src="assets/sale-1.jpg" />
-            <!--text--------------->
-            <a href="#">
-                <div class="sale-text">
-                    <strong>Bag With Rose Pattern</strong>
-                    <span>Sale off 25%</span>
-
-                </div>
-
-            </a>
-
-        </div>
-
-        <!--sale-box-2--------------->
-        <div class="sale-box">
-            <!--img---------------->
-            <img class="p-image" src="assets/sale-2.jpg" />
-            <!--text--------------->
-            <a href="#">
-                <div class="sale-text">
-                    <strong>Bag With Rose Pattern</strong>
-                    <span>Sale off 25%</span>
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
 
                 </div>
+                <!--product-box-2-->
+                <div class="product-box">
 
-            </a>
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
 
-        </div>
-        <!--sale-box-3--------------->
-        <div class="sale-box">
-            <!--img---------------->
-            <img class="p-image" src="assets/sale-3.jpg" />
-            <!--text--------------->
-            <a href="#">
-                <div class="sale-text">
-                    <strong>Bag With Rose Pattern</strong>
-                    <span>Sale off 25%</span>
+                        <img class="p-image" src="assets/p-2.png" />
+                    </div>
+
+
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
 
                 </div>
+                <!--product-box-3-->
+                <div class="product-box">
 
-            </a>
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
 
-        </div>
+                        <img class="p-image" src="assets/p-3.png" />
+                    </div>
 
-    </section>
 
-    <!--new-arrival-------------------------------->
-    <section class="new-arrival">
-        <!--heading------>
-        <div class="arrival-heading">
-            <strong>Feature Items</strong>
-            <p>We Provide You New Design Fashion Clothes</p>
-        </div>
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
 
-        <!--product-container-------------->
-        <div class="product-container">
-            <!--product-box-1-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-1.png" />
                 </div>
+                <!--product-box-4-->
+                <div class="product-box">
+
+                    <!--img------>
+                    <div class="product-img">
+                        <a href="#" class="add-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <img class="p-image" src="assets/p-4.png" />
+                    </div>
 
 
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
+                    <!--details-->
+                    <div class="product-details">
+                        <a href="#" class="p-name">Drawstring T-Shirt</a>
+                        <span class="p-price">$22.00</span>
+                    </div>
                 </div>
-
             </div>
-            <!--product-box-2-->
-            <div class="product-box">
+        </section>
 
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
 
-                    <img class="p-image" src="assets/p-2.png" />
+        <div class="banner-box f-slide-3">
+            <!--slider-text-container-------------->
+            <div class="banner-text-container">
+
+                <div class="banner-text">
+                    <span>Limited offer</span>
+                    <strong>30% off<br /> with <font>promo code</font></strong>
+                    <a href="#" class="banner-btn">Shop Now</a>
                 </div>
 
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
-            </div>
-            <!--product-box-3-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-3.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
-
-            </div>
-            <!--product-box-4-->
-            <div class="product-box">
-
-                <!--img------>
-                <div class="product-img">
-                    <a href="#" class="add-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-
-                    <img class="p-image" src="assets/p-4.png" />
-                </div>
-
-
-                <!--details-->
-                <div class="product-details">
-                    <a href="#" class="p-name">Drawstring T-Shirt</a>
-                    <span class="p-price">$22.00</span>
-                </div>
             </div>
         </div>
+        <!--services----------------------------------->
+        <section class="services">
 
-    </section>
-
-    <!--banner------------------------------->
-
-    <!--box------------->
-    <div class="banner-box f-slide-3">
-        <!--slider-text-container-------------->
-        <div class="banner-text-container">
-
-            <div class="banner-text">
-                <span>Limited offer</span>
-                <strong>30% off<br /> with <font>promo code</font></strong>
-                <a href="#" class="banner-btn">Shop Now</a>
+            <!--services-box-1------------->
+            <div class="services-box">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Free Shipping</span>
+                <p>Free Shipping For all US orders</p>
             </div>
 
-        </div>
-    </div>
-    <!--services----------------------------------->
-    <section class="services">
+            <!--services-box-2------------->
+            <div class="services-box">
+                <i class="fas fa-headphones-alt"></i>
+                <span>Support 24/7</span>
+                <p>We support 24h a day</p>
+            </div>
+            <!--services-box-3------------->
+            <div class="services-box">
+                <i class="fas fa-sync"></i>
+                <span>100% Money Back</span>
+                <p>You have 30 days to Return</p>
+            </div>
+        </section>
 
-        <!--services-box-1------------->
-        <div class="services-box">
-            <i class="fas fa-shipping-fast"></i>
-            <span>Free Shipping</span>
-            <p>Free Shipping For all US orders</p>
-        </div>
+        <!--footer------------------------------>
+        <footer>
+            <!--copyright----------------------------->
+            <span class="copyright">
+                Copyright 2020 - GoingToInternet
+            </span>
+            <!--subscribe---->
+            <div class="subscribe">
+                <form>
+                    <input type="email" placeholder="Example@gmail.com" required />
+                    <input type="submit" value="Subscribe" />
+                </form>
+            </div>
+        </footer>
 
-        <!--services-box-2------------->
-        <div class="services-box">
-            <i class="fas fa-headphones-alt"></i>
-            <span>Support 24/7</span>
-            <p>We support 24h a day</p>
-        </div>
-        <!--services-box-3------------->
-        <div class="services-box">
-            <i class="fas fa-sync"></i>
-            <span>100% Money Back</span>
-            <p>You have 30 days to Return</p>
-        </div>
-
-    </section>
-
-    <!--footer------------------------------>
-    <footer>
-        <!--copyright----------------------------->
-        <span class="copyright">
-            Copyright 2020 - GoingToInternet
-        </span>
-        <!--subscribe---->
-        <div class="subscribe">
-            <form>
-                <input type="email" placeholder="Example@gmail.com" required />
-                <input type="submit" value="Subscribe" />
-            </form>
-        </div>
-    </footer>
-
-
-
-    <!--script--------------->
-    <script type="text/javascript">
-        /*----For Search bar--------*/
-        $(document).on('click', '.search', function() {
-            $('.search-bar').addClass('search-bar-active')
-        });
-
-        $(document).on('click', '.search-cancel', function() {
-            $('.search-bar').removeClass('search-bar-active')
-        });
-
-        /*--login-sign-up-form-----------------------*/
-        $(document).on('click', '.user,.already-account', function() {
-            $('.form').addClass('login-active').removeClass('sign-up-active')
-        });
-
-        $(document).on('click', '.sign-up-btn', function() {
-            $('.form').addClass('sign-up-active').removeClass('login-active')
-        });
-
-        $(document).on('click', '.form-cancel', function() {
-            $('.form').removeClass('login-active').removeClass('sign-up-active')
-        });
-
-        /*---full-slider-script--------------------------*/
-
-        $(document).ready(function() {
-            $('#adaptive').lightSlider({
-                adaptiveHeight: true,
-                auto: true,
-                item: 1,
-                slideMargin: 0,
-                loop: true
+        <!--script--------------->
+        <script type="text/javascript">
+            /*----For Search bar--------*/
+            $(document).on('click', '.search', function() {
+                $('.search-bar').addClass('search-bar-active')
             });
-        });
-        /*--Feature-slider-------------------------------*/
-        $(document).ready(function() {
-            $('#autoWidth').lightSlider({
-                autoWidth: true,
-                loop: true,
-                onSliderLoad: function() {
-                    $('#autoWidth').removeClass('cS-hidden');
+
+            $(document).on('click', '.search-cancel', function() {
+                $('.search-bar').removeClass('search-bar-active')
+            });
+
+            /*--login-sign-up-form-----------------------*/
+            $(document).on('click', '.user,.already-account', function() {
+                $('.form').addClass('login-active').removeClass('sign-up-active')
+            });
+
+            $(document).on('click', '.sign-up-btn', function() {
+                $('.form').addClass('sign-up-active').removeClass('login-active')
+            });
+
+            $(document).on('click', '.form-cancel', function() {
+                $('.form').removeClass('login-active').removeClass('sign-up-active')
+            });
+
+            /*---full-slider-script--------------------------*/
+
+            $(document).ready(function() {
+                $('#adaptive').lightSlider({
+                    adaptiveHeight: true,
+                    auto: true,
+                    item: 1,
+                    slideMargin: 0,
+                    loop: true
+                });
+            });
+            /*--Feature-slider-------------------------------*/
+            $(document).ready(function() {
+                $('#autoWidth').lightSlider({
+                    autoWidth: true,
+                    loop: true,
+                    onSliderLoad: function() {
+                        $('#autoWidth').removeClass('cS-hidden');
+                    }
+                });
+            });
+
+            /*----for-fix-menu-when-scroll------------------*/
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.navigation').addClass('fix-nav');
+                } else {
+                    $('.navigation').removeClass('fix-nav');
+
                 }
-            });
-        });
-
-        /*----for-fix-menu-when-scroll------------------*/
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.navigation').addClass('fix-nav');
-            } else {
-                $('.navigation').removeClass('fix-nav');
-
-            }
-        })
-
-        /*--for-responsive-menu-----------------*/
-        $(document).ready(function() {
-            $('.toggle').click(function() {
-                $('.toggle').toggleClass('active')
-                $('.navigation').toggleClass('active')
             })
-        })
-    </script>
-</body>
 
+            /*--for-responsive-menu-----------------*/
+            $(document).ready(function() {
+                $('.toggle').click(function() {
+                    $('.toggle').toggleClass('active')
+                    $('.navigation').toggleClass('active')
+                })
+            })
+        </script>
+    </body>
 </html>
