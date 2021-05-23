@@ -106,7 +106,8 @@
             <!--heading---->
             <strong>Log In</strong>
             <!--inputs-->
-            <form>
+            <form action="connect.php" method="post">
+                <input type="hidden" name="type" value="login">
                 <input type="email" placeholder="Example@gmail.com" name="email" required>
                 <input type="password" placeholder="Password" name="password" required>
                 <!--submit-btn-->
@@ -130,6 +131,7 @@
             <strong>Sign Up</strong>
             <!--inputs-->
             <form action="connect.php" method="post">
+                <input type="hidden" name="type" value="signUp">
                 <input type="text" placeholder="Full Name" name="fullname" required>
                 <input type="email" placeholder="Example@gmail.com" name="email" required>
                 <input type="password" placeholder="Password" name="password" required>
@@ -594,7 +596,6 @@
 
         </div>
     </div>
-
     <!--services----------------------------------->
     <section class="services">
 
