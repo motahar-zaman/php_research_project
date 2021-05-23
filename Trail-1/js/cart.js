@@ -64,13 +64,6 @@ function removeCartRow(event) {
 }
 
 function remove() {
-    for (var i = 0; i < readLocalStorageObj.length; i++) {
-        var items = readLocalStorageObj[i];
-        var removeItem = JSON.parse(localStorage.removeItem('cartObj'));
-        console.log(removeItem);
-
-        items = JSON.stringify(removeItem);
-        localStorage.setItem("items", items);
-    }
-
+    var removeItem = JSON.parse(localStorage.removeItem('cartObj'));
+    console.log(removeItem);
 }
