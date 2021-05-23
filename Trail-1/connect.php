@@ -7,7 +7,7 @@
 	else {
         $type = $_POST["type"];
 
-        if($type = "login"){
+        if($type == "login"){
             $email = $_POST['email'];
             $password = $_POST['password'];
 
